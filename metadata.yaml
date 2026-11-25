@@ -2,4 +2,9 @@ name: mengzhai_market
 version: 1.1.1
 desc: 监听萌宅角色卡市场新卡并推送（支持图片，签名参数用户自填）
 author: Care
-repo: "https://github.com/Care0721"
+repo: "https://github.com/Care0721/Moemarket"
+# astrbot_version: ">=4.17.0"
+#   - aiocqhttp
+#   - qq_official
+# social_link: https://github.com/Care0721
+# tags:实用，工具，AI
