@@ -45,7 +45,7 @@
     "description": "轮询间隔（秒）",
     "type": "int",
     "default": 300,
-    "hint": "建议 180\~600"
+    "hint": "建议 180~600"
   },
   "push_targets": {
     "description": "推送目标会话",
