@@ -1,0 +1,83 @@
+{
+  "account": {
+    "description": "萌宅账号（用户名/邮箱）",
+    "type": "string",
+    "default": "",
+    "hint": "登录用的 account 字段"
+  },
+  "password": {
+    "description": "萌宅密码",
+    "type": "string",
+    "default": "",
+    "secret": true
+  },
+  "sign_secret": {
+    "description": "签名密钥 signSecret",
+    "type": "string",
+    "default": "",
+    "secret": true,
+    "hint": "必填，自己填写"
+  },
+  "app_pkg": {
+    "description": "X-App-Pkg",
+    "type": "string",
+    "default": "",
+    "hint": "必填，自己填写"
+  },
+  "app_ver": {
+    "description": "X-App-Ver",
+    "type": "string",
+    "default": "",
+    "hint": "必填，自己填写"
+  },
+  "api_base": {
+    "description": "API 地址",
+    "type": "string",
+    "default": "",
+    "hint": "例如 https://cn-api.mengzhai.club"
+  },
+  "enable_on_start": {
+    "description": "启动时自动开启监听",
+    "type": "bool",
+    "default": true
+  },
+  "poll_interval": {
+    "description": "轮询间隔（秒）",
+    "type": "int",
+    "default": 300,
+    "hint": "建议 180\~600"
+  },
+  "push_targets": {
+    "description": "推送目标会话",
+    "type": "list",
+    "default": [],
+    "_special": "umo",
+    "hint": "在 WebUI 选择群或私聊"
+  },
+  "max_new_per_push": {
+    "description": "单次最多推送新卡数量",
+    "type": "int",
+    "default": 5
+  },
+  "categories": {
+    "description": "只推送这些分类（留空=全部）",
+    "type": "list",
+    "default": [],
+    "hint": "助手 / 恋爱 / 二次元 / 搞笑 / 故事 / 学习 / 游戏 / 其他"
+  },
+  "push_image": {
+    "description": "推送角色图片",
+    "type": "bool",
+    "default": true
+  },
+  "prefer_avatar": {
+    "description": "优先使用头像（否则优先背景图）",
+    "type": "bool",
+    "default": true
+  },
+  "message_template": {
+    "description": "推送文案模板",
+    "type": "text",
+    "default": "🆕 萌宅新角色卡\n名称：{name}\n作者：{author}\n分类：{category}\n简介：{summary}\n导入数：{imports}"
+  }
+}
