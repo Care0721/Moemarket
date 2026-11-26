@@ -16,7 +16,7 @@ from astrbot.api.star import Context, Star, register
 
 @register(
     "mengzhai_market",
-    "care",
+    "Care",
     "萌宅角色卡市场监听推送（全链路重试/Markdown/图片兜底）",
     "1.3.0",
 )
